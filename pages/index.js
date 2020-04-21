@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import Head from 'next/head';
+import { PictureContext } from './_app';
+
 import styled from 'styled-components';
 
 import { T } from '../components';
-import { HELLOWORLD } from '../constants';
 import Image from '../components/Image';
 
 const IndexPage = () => {
+  const pics = useContext(PictureContext).map((x) => x.id);
+  const [picId, setPicId] = useState(0);
+
+  const nextPic = () => {
+    setPicId((picId + 1) % pics.length);
+  };
+  console.log(picId);
   return (
-    <Main>
+    <Main onClick={nextPic} id={picId}>
       <Head>
         <title>BMS Rent</title>
         <meta
@@ -18,7 +26,7 @@ const IndexPage = () => {
       </Head>
       <T id="title"></T>
       <T id="uitleg"></T>
-      <Image id="1"></Image>
+      <Image id={pics[picId]}></Image>
     </Main>
   );
 };
