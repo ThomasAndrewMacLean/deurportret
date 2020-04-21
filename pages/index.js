@@ -16,16 +16,21 @@ const IndexPage = () => {
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
         />
       </Head>
-      <h1>{HELLOWORLD}</h1>
-      <T id="test"></T>
+      <T id="title"></T>
+      <T id="uitleg"></T>
       <Image id="1"></Image>
-     
     </Main>
   );
 };
 
 const Main = styled.main`
+  padding: 3rem;
   background: var(--dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   h1 {
     color: var(--focus);
   }

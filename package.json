@@ -1,5 +1,5 @@
 {
-  "name": "bumperballs",
+  "name": "deurportret",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ThomasAndrewMacLean/bumperballs.git"
+    "url": "git+https://github.com/ThomasAndrewMacLean/deurportret.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ThomasAndrewMacLean/bumperballs/issues"
+    "url": "https://github.com/ThomasAndrewMacLean/deurportret/issues"
   },
-  "homepage": "https://github.com/ThomasAndrewMacLean/bumperballs#readme",
+  "homepage": "https://github.com/ThomasAndrewMacLean/deurportret#readme",
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "airtable": "^0.8.1",
