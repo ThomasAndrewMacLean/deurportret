@@ -3,12 +3,10 @@ import Head from 'next/head';
 import styled from 'styled-components';
 
 import { T } from '../components';
-import { useStore } from '../store';
 import { HELLOWORLD } from '../constants';
-import { add } from '../utils';
+import Image from '../components/Image';
 
 const IndexPage = () => {
-  const { count, countPlusOne } = useStore();
   return (
     <Main>
       <Head>
@@ -20,14 +18,17 @@ const IndexPage = () => {
       </Head>
       <h1>{HELLOWORLD}</h1>
       <T id="test"></T>
-      <button onClick={countPlusOne}>+</button>
-      {count}+ 1 = {add(count, 1)}
+      <Image id="1"></Image>
+     
     </Main>
   );
 };
 
 const Main = styled.main`
-  background: var(--background-dark);
+  background: var(--dark);
+  h1 {
+    color: var(--focus);
+  }
 `;
 
 export default IndexPage;

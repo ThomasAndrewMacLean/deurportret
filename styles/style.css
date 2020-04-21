@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400&display=swap');
 
 :root {
-  --background-dark: #77f;
-  --border: 3px solid black;
+  --dark: #030034;
+  --focus: #dafd6b;
+  --focus2: #fc74a8;
 }
 * {
   margin: 0;
@@ -15,7 +16,7 @@
 html,
 body {
   font-family: 'Roboto Slab', sans-serif;
-
+  color: var(--focus2);
   width: 100%;
   overflow-x: hidden;
 }
